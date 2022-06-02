@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+div>h1{
+    text-align: center;
+    padding-block: 21vh;
+    color: lightgray;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+div.perfil{
+    width: 440px;
+    text-align: justify;
+    font-size: 18px;
+    margin-top: 30px;
+
+    border: 4px solid darkblue;
+    padding: 19px;
+    border-radius: 5px;
+}
+
+div.perfil>div.foto>img{
+    width: 60px;
+    flex-direction: row;
+    border-radius: 40px;
+}
+
+div.perfil>div.foto{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+div.foto>h3{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: darkblue;
+    color: white;
+    padding-inline: 13px;
+    border-radius: 30px;
+}
+
+div.mensagem{
+    margin-top: 11px;
+}
+
+div.avaliacao{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+div.avaliacao>ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: darkblue;
+    align-items: center;
+    padding: 5px;
+    padding-inline: 12px;
+    border-radius: 10px;
+    transition: 0.9s;
+    cursor: pointer;
+}
+
+div.avaliacao>ul:hover{
+    box-shadow: 2.7px 4px gray;
+}
+
+div.avaliacao>ul>li{
+    margin-inline: 9px;
+    cursor: pointer;
+}
+
+
+div#messageInput>textarea{
+    resize: none; 
+    width: 440px; 
+    margin-top: 9px; 
+    padding-block: 6px; 
+    padding-inline: 4px; 
+    box-shadow: 3px 3px gray;
+    white-space: wrap;
+}
+
+div#buttonInput{
+    margin-top: 10px;
+}
+
+div#buttonInput>button{
+    padding: 12px;
+    border-radius: 12px;
+    cursor: pointer;
+    background-color: darkblue;
+    color: white;
+}
+
+@media (max-width: 510px) {
+    main{
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    div.mensagem{
+        font-size: 22px;
+    }
+}

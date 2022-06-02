@@ -15,6 +15,8 @@ div{
 }
 div>h1{
     color: darkgray;
+    padding-top: 19px;
+    
 }
 
 div>h3{
@@ -28,12 +30,12 @@ div>h3>span{
     color: white;
     padding-inline: 9px;
     font-style: italic;
-    transition: 1.2s;
+    transition: 0.5s;
 }
 
 div>h3>span:hover{
     border: 3px solid darkblue;
-    border-radius: 43px;
+    border-radius: 6px;
     
 }
 
@@ -45,6 +47,7 @@ ul{
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
 }
 
 li{
@@ -54,10 +57,18 @@ li{
     padding-block: 7px;
     margin-inline: 10px;
     border-radius: 40px;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
 li:hover{
     background-color: darkblue;
     color: whitesmoke;
-    padding: 10px;
+    box-shadow: 3px 3px gray;
+    padding-block: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
 }
