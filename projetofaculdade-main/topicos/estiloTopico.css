@@ -1,0 +1,27 @@
+body{
+    text-align: center;
+}
+
+ul{
+    display: inline-flex;
+    list-style: none;
+}
+
+li{
+    margin-inline: 10px;
+    background-color: darkblue;
+    color: white;
+    border-radius: 12px;
+    padding: 22px;
+    width: max-content;
+
+    transition: 0.3s;
+}
+
+li:hover{
+    box-shadow: 6px 6px #d3d3d3;
+}
+
+abbr, a{
+    text-decoration: none;
+}
