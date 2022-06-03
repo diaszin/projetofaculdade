@@ -1,9 +1,9 @@
 const textarea = document.getElementById("mensagemInput")
 const enviarButton = document.getElementById("buttonInput")
 
+
 function EnviarAction(){
    const result = document.getElementById("comment-result")
-
    var texto = `<div class="perfil">
    <div class="foto">
        <img src="../perfil/perfilsemfoto.jfif" alt="">
@@ -19,12 +19,7 @@ function EnviarAction(){
        </ul>
    </div>
 </div>`
-    const ofensas = ["macaco", "negro", "criolo"]
-    for(let i=0;i<ofensas.length;i++){
-        if(String(textarea.value).search(ofensas[i])===0){
-            alert("Esse tipo de palavra viola nossa conduta ética e moral.")
-        }
-    }
+
     $("main#comment-result").append(texto)
 }
 
@@ -39,3 +34,5 @@ textarea.addEventListener("keyup", (event)=>{
         textarea.value = ''
     }
 })
+
+
